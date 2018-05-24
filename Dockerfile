@@ -1,4 +1,5 @@
 FROM alpine:3.3
+FROM node:latest
 MAINTAINER Simen Huuse - itelligence / NTT Data // Thanks to Alex Bordei - Bigstep Inc.
 LABEL Simen Huuse - itelligence / NTT Data // Thanks to Alex Bordei - Bigstep Inc.
 
@@ -11,7 +12,7 @@ ADD nttdata.png /var/www/localhost/htdocs/nttdata.png
 ADD git.gif /var/www/localhost/htdocs/git.gif
 ADD docker.jpg /var/www/localhost/htdocs/docker.jpg
 
-EXPOSE 8888
+EXPOSE 80
 
 #specify the node base image with your desired version node:<version>
 #FROM node:6
